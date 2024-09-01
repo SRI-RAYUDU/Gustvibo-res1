@@ -18,7 +18,7 @@ const Login = () => {
         email,
         phone,
       });
-      navigate('/thank-you'); // Navigate to Thank You page after successful submission
+      navigate('/thank-you'); // Navigate to the route path, not the file path
     } catch (error) {
       console.error('Error adding document: ', error);
     }

@@ -42,8 +42,8 @@ const App = () => {
             }
           />
           <Route path="/menu-page" element={<MenuPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="./components/Navbar/login.js" element={<Login />} />
+          <Route path="./components/Navbar/thankyou.js" element={<ThankYou />} />
         </Routes>
       </div>
     </Router>
