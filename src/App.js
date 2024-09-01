@@ -10,13 +10,10 @@ import Footer from './container/Footer/Footer';
 import AboutUs from './container/AboutUs/AboutUs';
 import SpecialMenu from './container/Menu/SpecialMenu';
 import MenuPage from './container/Menu/MenuPage';
-import MenuItem from './components/Menuitem/MenuItem';
-import Chef from './container/Chef/Chef';
-import BookTable from './container/booktable/booktable';
-import ThankYou from './container/booktable/thankyou';
-import firebase from './container/firebase/firebase';
 import './App.css';
 import './index.css';
+import MenuItem from './components/Menuitem/MenuItem';
+import Chef from './container/Chef/Chef';
 
 const App = () => {
   return (
@@ -24,26 +21,21 @@ const App = () => {
       <div>
         <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Header />
-                <AboutUs />
-                <SpecialMenu />
-                <MenuItem />
-                <Chef />
-                <Intro />
-                <Laurels />
-                <Gallery />
-                <FindUs />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/" element={
+            <>
+              <Header />
+              <AboutUs />
+              <SpecialMenu />
+              <MenuItem />
+              <Chef />
+              <Intro />
+              <Laurels />
+              <Gallery />
+              <FindUs />
+              <Footer />
+            </>
+          } />
           <Route path="/menu-page" element={<MenuPage />} />
-          <Route path="/book-table" element={<BookTable />} />
-          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
       </div>
     </Router>
@@ -51,3 +43,4 @@ const App = () => {
 };
 
 export default App;
+
