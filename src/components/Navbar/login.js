@@ -3,27 +3,20 @@ import { useNavigate } from 'react-router-dom';
 import { db } from './firebaseconfi';
 import { collection, addDoc } from 'firebase/firestore';
 import './login.css';
+import ThankYou from './thankyou';
 
 const Login = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
+// debugger;
+const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await addDoc(collection(db, 'bookings'), {
-        name,
-        email,
-        phone,
-      });
-      navigate('/thank-you'); // Navigate to the route path, not the file path
-    } catch (error) {
-      console.error('Error adding document: ', error);
-    }
-  };
-
+    
+      navigate('/thank-you');
+    
+} 
   return (
     <div className="login">
       <form className="login__form" onSubmit={handleSubmit}>
