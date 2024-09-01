@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { db } from '../../firebase';
+import { db } from './firebaseconfi';
 import { collection, addDoc } from 'firebase/firestore';
 import './login.css';
 
@@ -16,9 +16,9 @@ const Login = () => {
       await addDoc(collection(db, 'bookings'), {
         name,
         email,
-        phone
+        phone,
       });
-      navigate('/thank-you');
+      navigate('/thank-you'); // Navigate to Thank You page after successful submission
     } catch (error) {
       console.error('Error adding document: ', error);
     }

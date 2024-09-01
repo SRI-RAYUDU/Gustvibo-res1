@@ -4,6 +4,8 @@ import images from '../../constants/images';
 import './Navbar.css';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { db } from './firebaseconfi';  // Adjust this path according to where your firebase.js file is located
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
