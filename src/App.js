@@ -10,10 +10,13 @@ import Footer from './container/Footer/Footer';
 import AboutUs from './container/AboutUs/AboutUs';
 import SpecialMenu from './container/Menu/SpecialMenu';
 import MenuPage from './container/Menu/MenuPage';
-import './App.css';
-import './index.css';
 import MenuItem from './components/Menuitem/MenuItem';
 import Chef from './container/Chef/Chef';
+import BookTable from './container/BookTable/BookTable';
+import ThankYou from './container/BookTable/ThankYou';
+import Login from './container/Login/Login';
+import './App.css';
+import './index.css';
 
 const App = () => {
   return (
@@ -36,6 +39,9 @@ const App = () => {
             </>
           } />
           <Route path="/menu-page" element={<MenuPage />} />
+          <Route path="/book-table" element={<BookTable />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
       </div>
     </Router>
@@ -43,4 +49,3 @@ const App = () => {
 };
 
 export default App;
-
