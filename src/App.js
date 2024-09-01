@@ -12,9 +12,9 @@ import SpecialMenu from './container/Menu/SpecialMenu';
 import MenuPage from './container/Menu/MenuPage';
 import MenuItem from './components/Menuitem/MenuItem';
 import Chef from './container/Chef/Chef';
-import BookTable from './container/BookTable/BookTable';
-import ThankYou from './container/BookTable/ThankYou';
-import Login from './container/Login/Login';
+
+import ThankYou from './components/Navbar/thankyou';
+import Login from './components/Navbar/login';
 import './App.css';
 import './index.css';
 
@@ -24,22 +24,24 @@ const App = () => {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Header />
-              <AboutUs />
-              <SpecialMenu />
-              <MenuItem />
-              <Chef />
-              <Intro />
-              <Laurels />
-              <Gallery />
-              <FindUs />
-              <Footer />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <AboutUs />
+                <SpecialMenu />
+                <MenuItem />
+                <Chef />
+                <Intro />
+                <Laurels />
+                <Gallery />
+                <FindUs />
+                <Footer />
+              </>
+            }
+          />
           <Route path="/menu-page" element={<MenuPage />} />
-          <Route path="/book-table" element={<BookTable />} />
           <Route path="/login" element={<Login />} />
           <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
