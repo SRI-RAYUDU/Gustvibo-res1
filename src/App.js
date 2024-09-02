@@ -39,7 +39,6 @@ const App = () => {
                 <Gallery />
                 <FindUs />
                 <Footer />
-                <SubscriptionThankYou/>
               </>
             }
           />
