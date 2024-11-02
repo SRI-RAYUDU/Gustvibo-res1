@@ -1,5 +1,6 @@
 // src/components/SubscriptionThankYou/SubscriptionThankYou.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './subscription.css';
 
 const SubscriptionThankYou = () => {
@@ -10,6 +11,9 @@ const SubscriptionThankYou = () => {
         Thank you for subscribing! You'll receive notifications with our latest
         updates.
       </p>
+      <Link to="/" className="back-home-button">
+        Back to Home
+      </Link>
     </div>
   );
 };

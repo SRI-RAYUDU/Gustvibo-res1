@@ -1,11 +1,11 @@
 import images from './images';
 
 const wines = [
-  // Wine data as you provided
+  
 ];
 
 const cocktails = [
-  // Cocktail data as you provided
+  
 ];
 
 const awards = [

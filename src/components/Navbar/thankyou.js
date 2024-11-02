@@ -1,11 +1,19 @@
+// ThankYou.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './thankyou.css';
 
 const ThankYou = () => {
+  const navigate = useNavigate();
+
+  const handleBackToHome = () => {
+    navigate('/'); // Redirects to the home page
+  };
+
   return (
     <div className="thank-you">
       <h2>Thank you for your confirmation!</h2>
-      <p>Your booking has been successfully recorded.</p>
+      <button onClick={handleBackToHome}>Back to Home</button>
     </div>
   );
 };

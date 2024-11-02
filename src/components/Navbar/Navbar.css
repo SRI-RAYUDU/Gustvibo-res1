@@ -4,9 +4,12 @@
     justify-content: space-between;
     align-items: center;
     background: var(--color-black);
-
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10; 
 }
+
 
 .app__navbar-logo {
     display: flex;

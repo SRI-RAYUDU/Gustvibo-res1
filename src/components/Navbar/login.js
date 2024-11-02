@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { db } from './firebaseconfi';
-import { collection, addDoc } from 'firebase/firestore';
 import './login.css';
-import ThankYou from './thankyou';
 
 const Login = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const navigate = useNavigate();
-// debugger;
-const handleSubmit = async (e) => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-      navigate('/thank-you');
-    
-} 
+    console.log('Form submitted with:', { name, email, phone });
+
+  
+    localStorage.setItem('userDetails', JSON.stringify({ name, email, phone }));
+
+   
+    navigate('/thank-you');
+  };
+
   return (
     <div className="login">
       <form className="login__form" onSubmit={handleSubmit}>

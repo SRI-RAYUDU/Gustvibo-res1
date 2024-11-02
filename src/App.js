@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
@@ -13,9 +13,9 @@ import SpecialMenu from './container/Menu/SpecialMenu';
 import MenuPage from './container/Menu/MenuPage';
 import MenuItem from './components/Menuitem/MenuItem';
 import Chef from './container/Chef/Chef';
-import ThankYou from './components/Navbar/thankyou';
-import Login from './components/Navbar/login';
-import SubscriptionThankYou from './components/Footer/subscription'
+import ThankYou from './components/Navbar/thankyou'; // Ensure this path is correct
+import Login from './components/Navbar/login'; // Ensure this path is correct
+import SubscriptionThankYou from './components/Footer/subscription';
 import './App.css';
 import './index.css';
 
