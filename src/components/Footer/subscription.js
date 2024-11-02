@@ -1,4 +1,3 @@
-// src/components/SubscriptionThankYou/SubscriptionThankYou.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './subscription.css';

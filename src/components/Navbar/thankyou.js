@@ -1,4 +1,3 @@
-// ThankYou.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './thankyou.css';
@@ -7,7 +6,7 @@ const ThankYou = () => {
   const navigate = useNavigate();
 
   const handleBackToHome = () => {
-    navigate('/'); // Redirects to the home page
+    navigate('/'); 
   };
 
   return (

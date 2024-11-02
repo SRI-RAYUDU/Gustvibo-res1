@@ -1,4 +1,4 @@
-// src/components/Newsletter/Newsletter.js
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import SubHeading from '../SubHeading/SubHeading';
@@ -8,7 +8,7 @@ const Newsletter = () => {
   const navigate = useNavigate();
 
   const handleSubscribe = () => {
-    // Redirect to Thank You page
+
     navigate('/subscription-thank-you');
   };
 
